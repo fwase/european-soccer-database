@@ -14,5 +14,5 @@ lint: format
 
 .PHONY: format
 format:
-	@pipenv run isort -rc ./scripts $(ISORT_OPTIONS)
+	@pipenv run isort ./scripts $(ISORT_OPTIONS)
 	@pipenv run black ./scripts $(BLACK_OPTIONS)
